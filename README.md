@@ -15,6 +15,33 @@ You have to run a server and a client for this purpose.
 
 ```docker run image_name bash run.sh c ip_of_server```
 
+### Results
+
+You can view the results of the run in client like below. 
+<pre>
+sockperf: Warmup stage (sending a few dummy messages)...
+sockperf: Starting test...
+sockperf: Test end (interrupted by timer)
+sockperf: Test ended
+sockperf: [Total Run] RunTime=5.000 sec; Warm up time=400 msec; SentMessages=50005; ReceivedMessages=500
+sockperf: ========= Printing statistics for Server No: 0
+sockperf: Test end (interrupted by signal 2)
+sockperf: [Valid Duration] RunTime=4.520 sec; SentMessages=45201; ReceivedMessages=453
+sockperf: ====> avg-rtt=116.460 (std-dev=178.973)
+sockperf: # dropped messages = 0; # duplicated messages = 0; # out-of-order messages = 0
+sockperf: Summary: Round trip is 116.460 usec
+sockperf: Total 453 observations; each percentile contains 4.53 observations
+sockperf: ---> <MAX> observation = 3103.589
+sockperf: ---> percentile 99.999 = 3103.589
+sockperf: ---> percentile 99.990 = 3103.589
+sockperf: ---> percentile 99.900 = 3103.589
+sockperf: ---> percentile 99.000 =  410.328
+sockperf: ---> percentile 90.000 =  194.947
+sockperf: ---> percentile 75.000 =  123.583
+sockperf: ---> percentile 50.000 =   75.848
+sockperf: ---> percentile 25.000 =   63.534
+sockperf: ---> <MIN> observation =   49.811
+</pre>
 
 ## NOTE
 
