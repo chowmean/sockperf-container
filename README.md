@@ -6,12 +6,12 @@ This repository is for creating the docker image for doing network performance t
 
 You have to run a server and a client for this purpose. 
 
-```running a server```
+### Running a server
 
 ```docker run -p image_name bash run.sh s```
 
 
-```running a client```
+### Running a client
 
 ```docker run image_name bash run.sh c ip_of_server```
 
