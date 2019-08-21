@@ -13,11 +13,29 @@ You have to run a server and a client for this purpose.
 
 ### Running a client
 
-```docker run image_name bash run.sh c ip_of_server```
+You can run client in two modes:
 
-### Results
+- Throughput
 
-You can view the results of the run in client like below. 
+```docker run image_name bash run.sh c th ip_of_server```
+
+Results
+
+<pre>
+sockperf: Total of 859056 messages sent in 5.000 sec
+
+sockperf: NOTE: test was performed, using msg-size=1500. For getting maximum throughput consider using --msg-size=1472
+sockperf: Summary: Message Rate is 171795 [msg/sec], Packet Rate is about 343590 [pkt/sec] (2 ip frags / msg)
+sockperf: Summary: BandWidth is 245.755 MBps (1966.038 Mbps)
+</pre>
+
+
+- Under Load
+
+```docker run image_name bash run.sh c ul ip_of_server```
+
+Results
+
 <pre>
 sockperf: Warmup stage (sending a few dummy messages)...
 sockperf: Starting test...
