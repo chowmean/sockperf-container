@@ -13,8 +13,16 @@ You have to run a server and a client for this purpose.
 
 ### Running a client
 
-```docker run image_name bash run.sh c ip_of_server```
+You can run client in two modes:
 
+- Throughput
+
+```docker run image_name bash run.sh c th ip_of_server```
+
+
+- Under Load
+
+```docker run image_name bash run.sh c ul ip_of_server```
 
 ## NOTE
 
